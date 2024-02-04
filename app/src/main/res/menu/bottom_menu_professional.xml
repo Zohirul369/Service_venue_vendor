@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bm_home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/bm_top_review"
+        android:title="Reviews"
+        android:icon="@drawable/review"/>
+    <item
+        android:id="@+id/bm_order"
+        android:title="Order"
+        android:icon="@drawable/order"/>
+    <item
+        android:id="@+id/bm_help"
+        android:title="Help"
+        android:icon="@drawable/help"/>
+    <item
+        android:id="@+id/bio_prof"
+        android:title="Bio"
+        android:icon="@drawable/setting"/>
+
+</menu>
