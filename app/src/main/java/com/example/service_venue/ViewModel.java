@@ -1,10 +1,15 @@
 package com.example.service_venue;
 
 public class ViewModel {
-    String vname, price, rating, hour, sname,vimage, distance, vaddress, vphone, cphone, cname, caddress, cimage, worktitle, cemail, vemail;
+    String vname, date,price, rating, hour, sname,vimage, distance, vaddress, vphone, cphone, cname, caddress, cimage, worktitle, cemail, vemail;
 
-    public ViewModel(String vname, String price, String rating, String hour, String sname, String vimage, String distance, String vaddress, String vphone, String cphone, String cname, String caddress, String cimage, String worktitle, String cemail, String vemail) {
+
+    ViewModel(){
+
+    }
+    public ViewModel(String vname, String date, String price, String rating, String hour, String sname, String vimage, String distance, String vaddress, String vphone, String cphone, String cname, String caddress, String cimage, String worktitle, String cemail, String vemail) {
         this.vname = vname;
+        this.date = date;
         this.price = price;
         this.rating = rating;
         this.hour = hour;
@@ -20,6 +25,14 @@ public class ViewModel {
         this.worktitle = worktitle;
         this.cemail = cemail;
         this.vemail = vemail;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public String getVname() {

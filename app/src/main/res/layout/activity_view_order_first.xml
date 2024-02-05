@@ -32,7 +32,7 @@
 
             <TextView
                 android:id="@+id/c_name"
-                android:layout_width="150"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"

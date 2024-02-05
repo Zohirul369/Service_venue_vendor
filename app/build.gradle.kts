@@ -38,6 +38,7 @@ android {
 
 dependencies {
 
+    var fragment_version = "1.6.1"
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -66,6 +67,7 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.orhanobut:dialogplus:1.11@aar")
     implementation("com.squareup.picasso:picasso:2.5.2")
+    implementation("androidx.fragment:fragment:$fragment_version")
 
 }
 apply(plugin = "com.google.gms.google-services")
