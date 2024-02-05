@@ -5,17 +5,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
-import android.widget.TableLayout;
 
 import com.example.service_venue.fragment.CompletedFragment;
 import com.example.service_venue.fragment.UpcomingFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class RequestActivity extends AppCompatActivity {
+    Button upcoming, complete;
     FrameLayout fragment_view;
     TabLayout tab_layout;
 
@@ -24,6 +22,8 @@ public class RequestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request);
 
+        upcoming = findViewById(R.id.upcoming);
+        complete = findViewById(R.id.completed);
         fragment_view = (FrameLayout) findViewById(R.id.frame_layout);
         tab_layout = (TabLayout) findViewById(R.id.tab_layout);
 
@@ -60,6 +60,5 @@ public class RequestActivity extends AppCompatActivity {
 
             }
         });
-
     }
 }

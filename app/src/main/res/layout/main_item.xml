@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/service"
+            android:id="@+id/worktitle"
             android:text="Service"
             android:layout_marginTop="10dp"
             android:textSize="15dp"
