@@ -1,9 +1,7 @@
 package com.example.service_venue.viewOrder;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import com.example.service_venue.R;
 
 public class ViewOrderFirstActivity extends AppCompatActivity {
