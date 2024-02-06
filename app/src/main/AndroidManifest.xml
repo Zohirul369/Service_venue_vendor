@@ -22,15 +22,7 @@
         <activity
             android:name=".viewOrder.ViewOrderFirstActivity"
             android:exported="false"/>
-        <activity
-            android:name=".RequestActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".activity_main_professional"
             android:exported="false" />
@@ -66,7 +58,13 @@
             android:exported="false" />
         <activity
             android:name=".Splash_Screen"
-            android:exported="false" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Login"
             android:exported="false" />

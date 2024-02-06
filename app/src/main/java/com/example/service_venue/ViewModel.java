@@ -1,15 +1,13 @@
 package com.example.service_venue;
 
 public class ViewModel {
-    String vname, date,price, rating, hour, sname,vimage, distance, vaddress, vphone, cphone, cname, caddress, cimage, worktitle, cemail, vemail;
-
+    String vname,price,rating,hour,sname,vimage,distance,vaddress,cphone,vphone,cname,caddress,cimage,worktitle,cemail,date;
 
     ViewModel(){
 
     }
-    public ViewModel(String vname, String date, String price, String rating, String hour, String sname, String vimage, String distance, String vaddress, String vphone, String cphone, String cname, String caddress, String cimage, String worktitle, String cemail, String vemail) {
+    public ViewModel(String vname, String price, String rating, String hour, String sname, String vimage, String distance, String vaddress, String cphone, String vphone, String cname, String caddress, String cimage, String worktitle, String cemail, String date) {
         this.vname = vname;
-        this.date = date;
         this.price = price;
         this.rating = rating;
         this.hour = hour;
@@ -17,21 +15,13 @@ public class ViewModel {
         this.vimage = vimage;
         this.distance = distance;
         this.vaddress = vaddress;
-        this.vphone = vphone;
         this.cphone = cphone;
+        this.vphone = vphone;
         this.cname = cname;
         this.caddress = caddress;
         this.cimage = cimage;
         this.worktitle = worktitle;
         this.cemail = cemail;
-        this.vemail = vemail;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
         this.date = date;
     }
 
@@ -99,20 +89,20 @@ public class ViewModel {
         this.vaddress = vaddress;
     }
 
-    public String getVphone() {
-        return vphone;
-    }
-
-    public void setVphone(String vphone) {
-        this.vphone = vphone;
-    }
-
     public String getCphone() {
         return cphone;
     }
 
     public void setCphone(String cphone) {
         this.cphone = cphone;
+    }
+
+    public String getVphone() {
+        return vphone;
+    }
+
+    public void setVphone(String vphone) {
+        this.vphone = vphone;
     }
 
     public String getCname() {
@@ -155,11 +145,11 @@ public class ViewModel {
         this.cemail = cemail;
     }
 
-    public String getVemail() {
-        return vemail;
+    public String getDate() {
+        return date;
     }
 
-    public void setVemail(String vemail) {
-        this.vemail = vemail;
+    public void setDate(String date) {
+        this.date = date;
     }
 }

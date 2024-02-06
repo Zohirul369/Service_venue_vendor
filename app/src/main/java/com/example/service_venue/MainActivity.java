@@ -69,12 +69,12 @@ public class MainActivity extends AppCompatActivity  {
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
             int itemId = item.getItemId();
-            if (itemId == R.id.bm_home) {
-                replaceFragment(new Home_Fragment());
+            if (itemId == R.id.bm_request) {
+                replaceFragment(new RequestFragment());
             } else if (itemId == R.id.bm_top_review) {
                 replaceFragment(new InboxFragment());
-            } else if (itemId == R.id.bm_order) {
-                replaceFragment(new OrderFragment());
+            } else if (itemId == R.id.bm_home) {
+                replaceFragment(new Home_Fragment());
             } else if (itemId == R.id.bm_help) {
                 replaceFragment(new HelpFragment());
             } else if (itemId == R.id.bm_settings) {

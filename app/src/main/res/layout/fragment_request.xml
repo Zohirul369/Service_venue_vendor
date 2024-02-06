@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RequestActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RequestFragment"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <TextView
@@ -15,7 +16,6 @@
         android:textSize="30dp"
         android:textColor="@color/white"
         android:background="@color/purple"/>
-
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
@@ -42,9 +42,11 @@
     <FrameLayout
         android:id="@+id/frame_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
     </FrameLayout>
+
+
+
 
 </LinearLayout>

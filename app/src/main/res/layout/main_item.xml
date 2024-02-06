@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="6dp"
     android:elevation="6dp"
     app:cardUseCompatPadding="true"
@@ -38,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/service"
+            android:id="@+id/worktitle"
             android:text="Service"
             android:layout_marginTop="10dp"
             android:textSize="15dp"
