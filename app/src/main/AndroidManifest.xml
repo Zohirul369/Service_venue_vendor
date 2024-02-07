@@ -17,12 +17,14 @@
         android:theme="@style/Theme.Service_Venue"
         tools:targetApi="31">
         <activity
+            android:name=".service.add.AddCarRent"
+            android:exported="false" />
+        <activity
             android:name=".viewOrder.ViewOrderSecondActivity"
             android:exported="false" />
         <activity
             android:name=".viewOrder.ViewOrderFirstActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".activity_main_professional"
             android:exported="false" />
