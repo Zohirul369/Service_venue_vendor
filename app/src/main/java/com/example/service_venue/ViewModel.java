@@ -1,16 +1,16 @@
 package com.example.service_venue;
 
 public class ViewModel {
-    String vname,price,rating,hour,sname,vimage,distance,vaddress,cphone,vphone,cname,caddress,cimage,worktitle,cemail,date;
+    String vname,price,rating,rate,sname,vimage,distance,vaddress,cphone,vphone,cname,caddress,cimage,worktitle,cemail,date;
 
     ViewModel(){
 
     }
-    public ViewModel(String vname, String price, String rating, String hour, String sname, String vimage, String distance, String vaddress, String cphone, String vphone, String cname, String caddress, String cimage, String worktitle, String cemail, String date) {
+    public ViewModel(String vname, String price, String rating, String rate, String sname, String vimage, String distance, String vaddress, String cphone, String vphone, String cname, String caddress, String cimage, String worktitle, String cemail, String date) {
         this.vname = vname;
         this.price = price;
         this.rating = rating;
-        this.hour = hour;
+        this.rate = rate;
         this.sname = sname;
         this.vimage = vimage;
         this.distance = distance;
@@ -49,12 +49,12 @@ public class ViewModel {
         this.rating = rating;
     }
 
-    public String getHour() {
-        return hour;
+    public String getRate() {
+        return rate;
     }
 
-    public void setHour(String hour) {
-        this.hour = hour;
+    public void getRate(String rate) {
+        this.rate = rate;
     }
 
     public String getSname() {
