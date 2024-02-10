@@ -53,7 +53,7 @@ public class AddCarRent extends AppCompatActivity {
         map.put("distance",distance.getText().toString());
         map.put("vimage",vimage.getText().toString());
 
-        FirebaseDatabase.getInstance().getReference().child("carRentService").push()
+        FirebaseDatabase.getInstance().getReference().child("service").child("carRent").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

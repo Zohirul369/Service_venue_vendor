@@ -33,7 +33,7 @@ public class CarRentService extends AppCompatActivity {
 
         FirebaseRecyclerOptions<ViewModel> options =
                 new FirebaseRecyclerOptions.Builder<ViewModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("carRentService"), ViewModel.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("service").child("carRent"), ViewModel.class)
                         .build();
 
         carRentAdapter = new CarRentAdapter(options);
