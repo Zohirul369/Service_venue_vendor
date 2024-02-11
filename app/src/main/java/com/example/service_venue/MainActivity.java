@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
 
 
-
-
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
        // navigationView= findViewById(R.id.nav_view);
 
@@ -89,10 +87,6 @@ public class MainActivity extends AppCompatActivity  {
     //=========================Here end the onCreate Method============================
 //=====================================================================================
 //=====================================================================================
-
-
-
-
 
 
 
