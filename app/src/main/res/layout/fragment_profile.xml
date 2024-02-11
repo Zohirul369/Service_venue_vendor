@@ -22,9 +22,9 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="25dp"
                 android:text="Account"
                 android:textColor="@color/white"
@@ -50,7 +50,7 @@
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center"
-
+                    android:layout_marginLeft="20dp"
                     android:src="@drawable/profile_circle" />
 
                 <LinearLayout
@@ -85,10 +85,9 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_tik"
-                            android:layout_marginTop="20dp"
                             android:layout_marginLeft="100dp"
-                            />
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_tik" />
                     </LinearLayout>
 
                     <TextView
@@ -108,156 +107,172 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_below="@+id/vendor_profile_details">
+            android:layout_below="@+id/vendor_profile_details"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:background="@drawable/vendor_profile_layout_bg"
-                android:layout_below="@id/vendor_profile_details"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_below="@id/vendor_profile_details"
+                android:background="@drawable/vendor_profile_layout_bg"
                 android:orientation="horizontal"
 
                 >
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_portfolio"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_portfolio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:text="My Portfolio"
-                    android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
-                android:background="@drawable/vendor_profile_layout_bg"
-                android:layout_below="@id/vendor_profile_details"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_below="@id/vendor_profile_details"
+                android:background="@drawable/vendor_profile_layout_bg"
                 android:orientation="horizontal"
 
                 >
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_portfolio"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_portfolio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:text="Your plan"
-                    android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
-                android:background="@drawable/vendor_profile_layout_bg"
-                android:layout_below="@id/vendor_profile_details"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_below="@id/vendor_profile_details"
+                android:background="@drawable/vendor_profile_layout_bg"
                 android:orientation="horizontal"
 
                 >
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_portfolio"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_portfolio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:text="Contact us"
-                    android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
-                android:background="@drawable/vendor_profile_layout_bg"
-                android:layout_below="@id/vendor_profile_details"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_below="@id/vendor_profile_details"
+                android:background="@drawable/vendor_profile_layout_bg"
                 android:orientation="horizontal"
 
                 >
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_portfolio"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_portfolio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:text="Privacy policy"
-                    android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
-                android:background="@drawable/vendor_profile_layout_bg"
-                android:layout_below="@id/vendor_profile_details"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_below="@id/vendor_profile_details"
+                android:background="@drawable/vendor_profile_layout_bg"
                 android:orientation="horizontal"
 
                 >
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_portfolio"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_portfolio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
                     android:text="About us"
-                    android:layout_gravity="center"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
+
             <LinearLayout
-                android:background="@drawable/vendor_profile_layout_bg"
-                android:layout_below="@id/vendor_profile_details"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+                android:layout_below="@id/vendor_profile_details"
+                android:background="@drawable/vendor_profile_layout_bg"
                 android:orientation="horizontal"
 
                 >
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_portfolio"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="30dp"/>
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/ic_portfolio" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FAQs"
                     android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:text="FAQs"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="20dp"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </LinearLayout>
-
 
 
     </RelativeLayout>
