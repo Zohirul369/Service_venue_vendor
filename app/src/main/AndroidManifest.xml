@@ -17,6 +17,18 @@
         android:theme="@style/Theme.Service_Venue"
         tools:targetApi="31">
         <activity
+            android:name=".ProfilePrivacy"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_FAQ"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Contact"
+            android:exported="false" />
+        <activity
             android:name=".profile_view"
             android:exported="false" />
         <activity
