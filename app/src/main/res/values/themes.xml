@@ -3,9 +3,13 @@
     <style name="Base.Theme.Service_Venue" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
 
-<!--        <item name="android:windowFullscreen">true</item>-->
+        <!--        <item name="android:windowFullscreen">true</item>-->
         <item name="android:statusBarColor" tools:targetApi="l">@color/lavender</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!--        statusbar remove-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+
     </style>
 
     <style name="Theme.Service_Venue" parent="Base.Theme.Service_Venue" />
@@ -13,7 +17,7 @@
     <!-- SplashScreen -->
     <style name="Splash_Screen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowBackground">@drawable/background_splashscreen</item>
-<!--        <item name="android:statusBarColor" tools:targetApi="l">?android:attr/colorPrimary</item>-->
+        <!--        <item name="android:statusBarColor" tools:targetApi="l">?android:attr/colorPrimary</item>-->
 
     </style>
 
@@ -45,5 +49,5 @@
         <item name="android:textSize">15dp</item>
     </style>
 
-    
+
 </resources>
