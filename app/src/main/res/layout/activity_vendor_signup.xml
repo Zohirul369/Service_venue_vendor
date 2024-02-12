@@ -90,6 +90,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/vendor_signup_continueBtn"
         android:layout_width="250dp"
         android:backgroundTint="@color/purple_500"
         android:layout_height="wrap_content"
