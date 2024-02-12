@@ -34,7 +34,7 @@ public class UpComingFragment extends Fragment {
 
         FirebaseRecyclerOptions<ViewModel> options =
                 new FirebaseRecyclerOptions.Builder<ViewModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("request"),ViewModel.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("serviceVenue").child("request"),ViewModel.class)
                         .build();
 
         adapterRequestActivity = new AdapterRequestActivity(options);

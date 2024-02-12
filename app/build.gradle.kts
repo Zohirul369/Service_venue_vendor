@@ -37,7 +37,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.firebase.firestore)
     var fragment_version = "1.6.1"
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -68,6 +68,8 @@ dependencies {
     implementation("com.orhanobut:dialogplus:1.11@aar")
     implementation("com.squareup.picasso:picasso:2.5.2")
     implementation("androidx.fragment:fragment:$fragment_version")
+    implementation("com.google.firebase:firebase-messaging:23.4.1")
+    implementation("com.google.gms:google-services:4.4.1")
 
 
     // Import the BoM for the Firebase platform
