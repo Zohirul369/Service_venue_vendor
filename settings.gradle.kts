@@ -16,10 +16,11 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
 
     }
 }
 
 rootProject.name = "Service_Venue"
-include(":app")
+include(":app");
  
