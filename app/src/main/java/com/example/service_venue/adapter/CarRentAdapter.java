@@ -65,11 +65,12 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
                 TextView rate = view.findViewById(R.id.rate);
                 TextView serviceName = view.findViewById(R.id.worktitle);
                 TextView vfname = view.findViewById(R.id.vfname);
+                TextView vPhone = view.findViewById(R.id.v_phone);
+                CircleImageView img = view.findViewById(R.id.v_imageview); // assuming the ImageView ID is 'image_in_dialog'
 
-
-                CircleImageView vImage = view.findViewById(R.id.v_imageview); // assuming the ImageView ID is 'image_in_dialog'
 
                 vname.setText(model.getvName());
+                vPhone.setText(model.getvPhone());
                 rate.setText(model.getvRate());
                 distance.setText(model.getvDistance());
                 rating.setText(model.getvRating());
@@ -84,7 +85,7 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
                         .placeholder(com.google.firebase.storage.R.drawable.common_google_signin_btn_icon_dark) // Placeholder image for Glide
                         .error(com.google.android.gms.base.R.drawable.common_google_signin_btn_icon_dark) // Error image for Glide
                         .circleCrop()
-                        .into(vImage); // Load the image into the ImageView in the dialog
+                        .into(holder.img); // Load the image into the ImageView in the dialog
 
 
                 dialogPlus.show();
@@ -172,18 +173,20 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
 
     static class myViewHolder extends RecyclerView.ViewHolder {
         CircleImageView img;
-        TextView vName, vRating, vDistance, vRate, serviceName, vfname;
+        TextView vName, vRating, vDistance, vRate, serviceName, vfname,vPhone;
         Button btn_view_profile,btn_book_now;
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            img = itemView.findViewById(R.id.v_imageview);
+
+            img = (CircleImageView)itemView.findViewById(R.id.v_imageview);
             vName = itemView.findViewById(R.id.vname);
             vRating = itemView.findViewById(R.id.rating);
             vDistance = itemView.findViewById(R.id.distance);
             vRate = itemView.findViewById(R.id.rate);
             serviceName = itemView.findViewById(R.id.worktitle);
             vfname = itemView.findViewById(R.id.vfname);
+            vPhone = itemView.findViewById(R.id.v_phone);
 
 
 

@@ -20,7 +20,7 @@ import java.util.Map;
 
 public class AddCarRent extends AppCompatActivity {
 
-    TextView vname, rating, distance, rate, vimage;
+    TextView vName, vRating, vDistance, vRate, vImage, serviceName,vPhone;
     Button btn_add;
 
     @Override
@@ -28,11 +28,13 @@ public class AddCarRent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_car_rent);
 
-        vname = (EditText)findViewById(R.id.vname);
-        rating = (EditText)findViewById(R.id.rating);
-        distance = (EditText)findViewById(R.id.distance);
-        rate = (EditText)findViewById(R.id.rate);
-        vimage = (EditText)findViewById(R.id.vimage);
+        vName = (EditText)findViewById(R.id.vname);
+        vRating = (EditText)findViewById(R.id.rating);
+        vPhone = (EditText)findViewById(R.id.v_phone);
+        vDistance = (EditText)findViewById(R.id.distance);
+        vRate = (EditText)findViewById(R.id.rate);
+        vImage = (EditText)findViewById(R.id.vimage);
+        //serviceName.setText("Car Rent");
 
         btn_add = (Button)findViewById(R.id.btn_add);
 
@@ -47,13 +49,15 @@ public class AddCarRent extends AppCompatActivity {
 
     private void insertData(){
         Map<String,Object> map = new HashMap<>();
-        map.put("vname",vname.getText().toString());
-        map.put("rating",rating.getText().toString());
-        map.put("rate",rate.getText().toString());
-        map.put("distance",distance.getText().toString());
-        map.put("vimage",vimage.getText().toString());
+        map.put("vName",vName.getText().toString());
+        map.put("vPhone",vPhone.getText().toString());
+        //map.put("serviceName",serviceName.getText().toString());
+        map.put("vRating",vRating.getText().toString());
+        map.put("vRate",vRate.getText().toString());
+        map.put("vDistance",vDistance.getText().toString());
+        map.put("vImage",vImage.getText().toString());
 
-        FirebaseDatabase.getInstance().getReference().child("service").child("carRent").push()
+        FirebaseDatabase.getInstance().getReference().child("serviceVenue").child("service").child("carRent").push()
                 .setValue(map)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override

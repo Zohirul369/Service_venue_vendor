@@ -18,6 +18,9 @@
         tools:targetApi="31">
 
         <activity
+            android:name=".service.add.AddCarRent"
+            android:exported="false" />
+        <activity
             android:name=".viewOrder.ViewOrderSecondActivity"
             android:exported="false" />
         <activity
@@ -26,7 +29,6 @@
         <activity
             android:name=".VendorProfile"
             android:exported="false" />
-
         <activity
             android:name=".service.BeautyParlourService"
             android:exported="false" />
@@ -60,11 +62,9 @@
         <activity
             android:name=".Splash_Screen"
             android:exported="false" />
-
-
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
