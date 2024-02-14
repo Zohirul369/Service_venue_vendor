@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".order.OrderFirstPageActivity">
+    tools:context=".viewOrder.OrderFirstPageActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             android:padding="15dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/c_imageview"
+                android:id="@+id/client_img"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@mipmap/ic_launcher"
@@ -30,24 +30,24 @@
                 app:civ_border_width="3dp" />
 
             <TextView
-                android:id="@+id/vname"
+                android:id="@+id/cname"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="5dp"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_toRightOf="@id/client_img"
                 android:text="name"
                 android:textColor="@color/blue"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/vphone"
+                android:id="@+id/cphone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:layout_toRightOf="@id/vname"
+                android:layout_toRightOf="@id/cname"
                 android:text="01947937424" />
 
             <TextView
@@ -55,8 +55,8 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_below="@id/vname"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_below="@id/cname"
+                android:layout_toRightOf="@id/client_img"
                 android:text="Job Task" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_job_task"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_toRightOf="@id/client_img"
                 android:layout_marginStart="10dp"
                 android:text="Tab Wash"
                 android:textColor="@color/black"
@@ -75,7 +75,7 @@
                 android:id="@+id/text_address_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/vname"
+                android:layout_below="@id/cname"
                 android:layout_toRightOf="@id/text_job_task"
                 android:text="Address Title" />
 
@@ -98,14 +98,14 @@
                 android:layout_below="@id/job_task"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_toRightOf="@id/client_img"
                 android:text="Date" />
 
             <TextView
-                android:id="@+id/date"
+                android:id="@+id/cdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_toRightOf="@id/client_img"
                 android:layout_below="@id/text_date"
                 android:layout_marginStart="10dp"
                 android:text="04/02/2024"
@@ -116,18 +116,18 @@
                 android:id="@+id/text_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/date"
+                android:layout_below="@id/cdate"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="5dp"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_toRightOf="@id/client_img"
                 android:text="Address" />
 
             <TextView
-                android:id="@+id/address"
+                android:id="@+id/caddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/text_address"
-                android:layout_toRightOf="@id/c_imageview"
+                android:layout_toRightOf="@id/client_img"
                 android:layout_marginStart="10dp"
                 android:text="Dhaka,Gazipur"
                 android:textColor="@color/black"
@@ -143,7 +143,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/cancel"
+            android:id="@+id/btn_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -153,7 +153,7 @@
 
 
         <Button
-            android:id="@+id/accept"
+            android:id="@+id/btn_accept"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

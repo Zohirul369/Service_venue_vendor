@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.service_venue.R;
 
-public class ViewOrderSecondActivity extends AppCompatActivity {
+public class OrderSecondPageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

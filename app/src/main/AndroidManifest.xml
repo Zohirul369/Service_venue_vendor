@@ -21,7 +21,7 @@
             android:name=".service.add.AddCarRent"
             android:exported="false" />
         <activity
-            android:name=".viewOrder.ViewOrderSecondActivity"
+            android:name=".viewOrder.OrderSecondPageActivity"
             android:exported="false" />
         <activity
             android:name=".viewOrder.ViewOrderFirstActivity"
