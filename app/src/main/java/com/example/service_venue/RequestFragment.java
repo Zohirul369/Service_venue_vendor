@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.service_venue.fragment.CompletedFragment;
+import com.example.service_venue.fragment.UpComingFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class RequestFragment extends Fragment {
