@@ -85,25 +85,6 @@
                 android:textColor="@color/black"
                 android:id="@+id/v_phone"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:text="rating"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="35dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/rounded"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:id="@+id/rating"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -113,7 +94,7 @@
                 android:textSize="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:text="Distance"/>
+                android:text="Address"/>
 
             <EditText
                 android:layout_width="match_parent"

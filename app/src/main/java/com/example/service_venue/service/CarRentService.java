@@ -2,7 +2,10 @@ package com.example.service_venue.service;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,6 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 public class CarRentService extends AppCompatActivity {
     private RecyclerView recyclerView;
     private CarRentAdapter carRentAdapter;
+
+    SearchView searchView;
 
     FloatingActionButton floatingActionButton;
 
@@ -58,5 +63,39 @@ public class CarRentService extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         carRentAdapter.stopListening();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //getMenuInflater().inflate(R.menu.search,menu);
+        MenuItem item = menu.findItem(R.id.search);
+        SearchView searchView = (SearchView) item.getActionView();
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                txtSearch(query);
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+                txtSearch(query);
+                return false;
+            }
+        });
+        return super.onCreateOptionsMenu(menu);
+    }
+    private void txtSearch(String str){
+        FirebaseRecyclerOptions<ViewModel> options =
+                new FirebaseRecyclerOptions.Builder<ViewModel>()
+                        .setQuery(FirebaseDatabase.getInstance()
+                                .getReference().child("serviceVenue").child("service").child("carRent")
+                                .orderByChild("vName")
+                                .startAt(str).endAt(str+"~"),ViewModel.class)
+                        .build();
+        carRentAdapter = new CarRentAdapter(options);
+        carRentAdapter.startListening();
+        recyclerView.setAdapter(carRentAdapter);
     }
 }

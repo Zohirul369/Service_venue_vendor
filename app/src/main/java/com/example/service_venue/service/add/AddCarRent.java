@@ -20,7 +20,7 @@ import java.util.Map;
 
 public class AddCarRent extends AppCompatActivity {
 
-    TextView vName, vRating, vDistance, vRate, vImage, serviceName,vPhone;
+    TextView vName, vDistance, vRate, vImage, serviceName,vPhone;
     Button btn_add;
 
     @Override
@@ -29,7 +29,6 @@ public class AddCarRent extends AppCompatActivity {
         setContentView(R.layout.activity_add_car_rent);
 
         vName = (EditText)findViewById(R.id.vname);
-        vRating = (EditText)findViewById(R.id.rating);
         vPhone = (EditText)findViewById(R.id.v_phone);
         vDistance = (EditText)findViewById(R.id.distance);
         vRate = (EditText)findViewById(R.id.rate);
@@ -52,7 +51,7 @@ public class AddCarRent extends AppCompatActivity {
         map.put("vName",vName.getText().toString());
         map.put("vPhone",vPhone.getText().toString());
         //map.put("serviceName",serviceName.getText().toString());
-        map.put("vRating",vRating.getText().toString());
+
         map.put("vRate",vRate.getText().toString());
         map.put("vDistance",vDistance.getText().toString());
         map.put("vImage",vImage.getText().toString());

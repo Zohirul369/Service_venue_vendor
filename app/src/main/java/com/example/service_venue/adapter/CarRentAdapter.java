@@ -23,6 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.orhanobut.dialogplus.DialogPlus;
 import com.orhanobut.dialogplus.ViewHolder;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,7 +39,6 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
     protected void onBindViewHolder(@NonNull myViewHolder holder, @SuppressLint("RecyclerView") final int position, @NonNull ViewModel model) {
         holder.vName.setText(model.getvName());
         holder.vRate.setText(model.getvRate());
-        holder.vRating.setText(model.getvRating());
         holder.vDistance.setText(model.getvDistance());
 
 
@@ -60,7 +60,6 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
                 View view = dialogPlus.getHolderView();
 
                 TextView vname = view.findViewById(R.id.vname);
-                TextView rating = view.findViewById(R.id.rating);
                 TextView distance = view.findViewById(R.id.distance);
                 TextView rate = view.findViewById(R.id.rate);
                 TextView serviceName = view.findViewById(R.id.worktitle);
@@ -73,7 +72,6 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
                 vPhone.setText(model.getvPhone());
                 rate.setText(model.getvRate());
                 distance.setText(model.getvDistance());
-                rating.setText(model.getvRating());
                 serviceName.setText(model.getServiceName());
                 vfname.setText(model.getvName());
 
@@ -162,6 +160,7 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
         });
 
 
+
     }
 
     @NonNull
@@ -171,9 +170,11 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
         return new myViewHolder(view);
     }
 
+
+
     static class myViewHolder extends RecyclerView.ViewHolder {
         CircleImageView img;
-        TextView vName, vRating, vDistance, vRate, serviceName, vfname,vPhone;
+        TextView vName, vDistance, vRate, serviceName, vfname,vPhone;
         Button btn_view_profile,btn_book_now;
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -181,7 +182,6 @@ public class CarRentAdapter extends FirebaseRecyclerAdapter<ViewModel, CarRentAd
 
             img = (CircleImageView)itemView.findViewById(R.id.v_imageview);
             vName = itemView.findViewById(R.id.vname);
-            vRating = itemView.findViewById(R.id.rating);
             vDistance = itemView.findViewById(R.id.distance);
             vRate = itemView.findViewById(R.id.rate);
             serviceName = itemView.findViewById(R.id.worktitle);
