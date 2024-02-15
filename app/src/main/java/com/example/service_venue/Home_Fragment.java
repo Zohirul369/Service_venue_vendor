@@ -9,7 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
@@ -18,9 +17,8 @@ import com.example.service_venue.service.BeautyParlourService;
 import com.example.service_venue.service.CarRentService;
 import com.example.service_venue.service.CarWashService;
 import com.example.service_venue.service.ElectricianService;
-import com.example.service_venue.service.HouseCleaing;
-import com.example.service_venue.service.LondiService;
-import com.example.service_venue.service.MovingService;
+import com.example.service_venue.service.HouseCleaning;
+import com.example.service_venue.service.LaundryService;
 import com.example.service_venue.service.PaintingService;
 import com.example.service_venue.service.PlumbingService;
 
@@ -79,7 +77,7 @@ public class Home_Fragment extends Fragment {
         laundry_img_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LondiService.class);
+                Intent intent = new Intent(getActivity(), LaundryService.class);
                 startActivity(intent);
             }
         });
@@ -97,7 +95,7 @@ public class Home_Fragment extends Fragment {
         house_clean_img_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), HouseCleaing.class);
+                Intent intent = new Intent(getActivity(), HouseCleaning.class);
                 startActivity(intent);
             }
         });

@@ -14,26 +14,23 @@ import android.widget.SearchView;
 import com.example.service_venue.R;
 import com.example.service_venue.ViewModel;
 import com.example.service_venue.adapter.CarRentAdapter;
-import com.example.service_venue.adapter.PlumberAdapter;
 import com.example.service_venue.service.add.AddCarRent;
-import com.example.service_venue.service.add.AddPlumber;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class PlumbingService extends AppCompatActivity {
-
+public class HouseCleaning extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private PlumberAdapter plumberAdapter;
+    private CarRentAdapter carRentAdapter;
 
     SearchView searchView;
 
     FloatingActionButton floatingActionButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plumbing_service);
-
+        setContentView(R.layout.activity_house_cleaning);
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -42,14 +39,14 @@ public class PlumbingService extends AppCompatActivity {
                         .setQuery(FirebaseDatabase.getInstance().getReference().child("serviceVenue").child("service").child("plumber"), ViewModel.class)
                         .build();
 
-        plumberAdapter = new PlumberAdapter(options);
-        recyclerView.setAdapter(plumberAdapter);
+        carRentAdapter = new CarRentAdapter(options);
+        recyclerView.setAdapter(carRentAdapter);
         floatingActionButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(getApplicationContext(), AddPlumber.class));
+                startActivity(new Intent(getApplicationContext(), AddCarRent.class));
             }
         });
 
@@ -58,13 +55,13 @@ public class PlumbingService extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        plumberAdapter.startListening();
+        carRentAdapter.startListening();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        plumberAdapter.stopListening();
+        carRentAdapter.stopListening();
     }
 
     @Override
@@ -96,8 +93,8 @@ public class PlumbingService extends AppCompatActivity {
                                 .orderByChild("vName")
                                 .startAt(str).endAt(str+"~"),ViewModel.class)
                         .build();
-        plumberAdapter = new PlumberAdapter(options);
-        plumberAdapter.startListening();
-        recyclerView.setAdapter(plumberAdapter);
+        carRentAdapter = new CarRentAdapter(options);
+        carRentAdapter.startListening();
+        recyclerView.setAdapter(carRentAdapter);
     }
 }

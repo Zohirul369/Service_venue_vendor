@@ -24,7 +24,7 @@
             android:name=".viewOrder.OrderSecondPageActivity"
             android:exported="false" />
         <activity
-            android:name=".viewOrder.ViewOrderFirstActivity"
+            android:name=".viewOrder.OrderFirstPageActivity"
             android:exported="false" />
         <activity
             android:name=".VendorProfile"
@@ -33,7 +33,7 @@
             android:name=".service.BeautyParlourService"
             android:exported="false" />
         <activity
-            android:name=".service.LondiService"
+            android:name=".service.LaundryService"
             android:exported="false" />
         <activity
             android:name=".service.CarRentService"
@@ -48,7 +48,7 @@
             android:name=".service.ElectricianService"
             android:exported="false" />
         <activity
-            android:name=".service.HouseCleaing"
+            android:name=".service.HouseCleaning"
             android:exported="false" />
         <activity
             android:name=".service.PlumbingService"
@@ -81,8 +81,7 @@
         <activity
             android:name=".Vendor_Signup"
             android:exported="false" />
-<activity android:name=".profile_view"
-    android:exported="false"/>
+
 
 
         <meta-data

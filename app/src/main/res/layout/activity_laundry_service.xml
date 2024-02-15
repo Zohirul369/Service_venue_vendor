@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Electrician Service"
+        android:text="Laundry Service"
         android:textColor="@color/purple"
         android:textSize="30dp"
         android:gravity="center"/>
@@ -50,9 +50,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-
-
 
 
 </LinearLayout>
