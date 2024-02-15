@@ -32,7 +32,7 @@ public class AddCarWash extends AppCompatActivity {
         vDistance = (EditText)findViewById(R.id.distance);
         vRate = (EditText)findViewById(R.id.rate);
         vImage = (EditText)findViewById(R.id.vimage);
-        //serviceName.setText("Car Rent");
+
 
         btn_add = (Button)findViewById(R.id.btn_add);
 

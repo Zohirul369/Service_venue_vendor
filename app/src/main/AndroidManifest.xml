@@ -21,6 +21,9 @@
             android:name=".service.add.AddCarRent"
             android:exported="false" />
         <activity
+            android:name=".service.add.AddBeautyParlour"
+            android:exported="false" />
+        <activity
             android:name=".viewOrder.OrderSecondPageActivity"
             android:exported="false" />
         <activity
@@ -55,9 +58,6 @@
             android:exported="false" />
         <activity
             android:name=".service.PaintingService"
-            android:exported="false" />
-        <activity
-            android:name=".Service_Activity"
             android:exported="false" />
         <activity
             android:name=".Splash_Screen"

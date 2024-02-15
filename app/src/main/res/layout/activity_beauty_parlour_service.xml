@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Service_Activity"
+    tools:context=".service.BeautyParlourService"
+    android:orientation="vertical"
     android:background="@color/white">
 
 
@@ -15,6 +16,7 @@
         android:textColor="@color/purple"
         android:textSize="30dp"
         android:gravity="center"/>
+
     <androidx.appcompat.widget.SearchView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,12 +31,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+                android:id="@+id/be_recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="690dp"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="0dp" />
+
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton"
                 android:layout_width="wrap_content"
@@ -50,8 +54,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-
-
 
 </LinearLayout>
