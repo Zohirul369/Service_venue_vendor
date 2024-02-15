@@ -143,7 +143,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
 
-                    android:text="towhidm74@gmail.com"
+                    android:hint="towhidm74@gmail.com"
                     android:textColor="@color/black" />
             </LinearLayout>
 
