@@ -8,13 +8,6 @@
     android:orientation="vertical"
     tools:context=".Home_Fragment">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/profile_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:backgroundTint="@color/red"
-        android:src="@drawable/login_icon"></com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 
     <ScrollView
@@ -74,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/painting" />
+                        android:src="@drawable/paint" />
 
                     <ImageButton
                         android:id="@+id/plumbing_img_btn"
@@ -90,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/car_wash" />
+                        android:src="@drawable/carwash" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -102,10 +95,10 @@
                     <ImageButton
                         android:id="@+id/car_rental_img_btn"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="80dp"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/car_rental" />
+                        android:src="@drawable/carrent" />
 
                     <ImageButton
                         android:id="@+id/electrician_img_btn"
@@ -113,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/electrician" />
+                        android:src="@drawable/electrical" />
 
                     <ImageButton
                         android:id="@+id/laundry_img_btn"
@@ -121,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/londi" />
+                        android:src="@drawable/laundry" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -136,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/parler" />
+                        android:src="@drawable/beauty" />
 
                     <ImageButton
                         android:id="@+id/house_clean_img_btn"
@@ -144,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/house_clean" />
+                        android:src="@drawable/home" />
 
                     <ImageButton
                         android:id="@+id/moving_service_img_btn"
@@ -152,7 +145,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="@color/Pastel_Mints"
-                        android:src="@drawable/moving_service" />
+                        android:src="@drawable/move" />
 
                 </LinearLayout>
 

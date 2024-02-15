@@ -32,32 +32,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:background="@color/purple_500"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:text="Call to speak with us"
-            android:textColor="@color/white"
-            android:textSize="17sp"
-            android:textStyle="bold" />
 
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="50dp"
-            android:backgroundTint="@color/white"
-            android:gravity="center"
-            android:text="Call now"
-            android:textColor="@color/purple_500"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -66,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Or Write us your issue"
+        android:text="Write us your issue"
         android:textColor="@color/purple_500"
         android:textSize="17sp"
         android:textStyle="bold" />
@@ -101,7 +80,6 @@
             android:autofillHints="name"
             android:hint="Enter your name"
             android:inputType="textPersonName"
-            android:text="Towhiddddddddddd"
             android:textColor="@color/black" />
     </LinearLayout>
 
@@ -134,7 +112,6 @@
             android:layout_marginLeft="20dp"
             android:hint="Enter your mobile no"
             android:inputType="phone"
-            android:text="+8801631913617"
             android:textColor="@color/black" />
     </LinearLayout>
 
@@ -167,7 +144,6 @@
             android:layout_marginLeft="20dp"
             android:hint="Enter your suggestion or problem"
             android:inputType="text"
-            android:text="I need this service"
             android:textColor="@color/black" />
 
 

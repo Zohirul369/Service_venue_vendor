@@ -82,7 +82,9 @@
             android:name=".Vendor_Signup"
             android:exported="false" />
 
-
+        <activity
+            android:name=".profile_view"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

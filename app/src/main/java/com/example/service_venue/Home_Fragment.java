@@ -44,9 +44,9 @@ public class Home_Fragment extends Fragment {
 // imageList.add(new SlideModel("String Url" or R.drawable))
 // imageList.add(new SlideModel("String Url" or R.drawable, "title")) You can add title
 
-        imageList.add(new SlideModel(R.drawable.carpenter, ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://bit.ly/2BteuF2", "Elephants and tigers may become extinct.",ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://bit.ly/3fLJf72", "And people do that.",ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://plus.unsplash.com/premium_photo-1661884973994-d7625e52631a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://images.unsplash.com/photo-1595814433015-e6f5ce69614e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://plus.unsplash.com/premium_photo-1661884973994-d7625e52631a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",ScaleTypes.CENTER_CROP));
 
         ImageSlider imageSlider = view.findViewById(R.id.smartSlider);
         imageSlider.setImageList(imageList);
