@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Add New Vendor"
-        android:background="@color/blue"
+        android:background="@color/purple_500"
         android:textSize="25dp"
         android:gravity="center"
         android:textColor="#FFF"/>
@@ -155,7 +155,7 @@
                 android:textSize="21dp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:backgroundTint="@color/purple"
+                android:backgroundTint="@color/purple_500"
                 android:layout_gravity="center"
                 android:id="@+id/btn_add"/>
         </LinearLayout>

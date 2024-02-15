@@ -69,13 +69,11 @@ public class MainActivity extends AppCompatActivity  {
             int itemId = item.getItemId();
             if (itemId == R.id.bm_request) {
                 replaceFragment(new RequestFragment());
-            } else if (itemId == R.id.bm_top_review) {
+            } else if (itemId == R.id.bm_notification) {
                 replaceFragment(new InboxFragment());
             } else if (itemId == R.id.bm_home) {
                 replaceFragment(new Home_Fragment());
-            } else if (itemId == R.id.bm_help) {
-                replaceFragment(new HelpFragment());
-            } else if (itemId == R.id.bm_account) {
+            }  else if (itemId == R.id.bm_account) {
                 replaceFragment(new ProfileFragment());
             }
 

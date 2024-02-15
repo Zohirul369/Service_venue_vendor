@@ -4,7 +4,7 @@
         <!-- Customize your light theme here. -->
 
         <!--        <item name="android:windowFullscreen">true</item>-->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/lavender</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/purple_500</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
         <!--        statusbar remove-->

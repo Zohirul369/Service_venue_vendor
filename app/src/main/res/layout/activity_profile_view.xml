@@ -8,15 +8,16 @@
     tools:context=".profile_view">
 
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="#EDF4F2">
 
         <LinearLayout
             android:id="@+id/profile_view_header"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/purple_500"
+            android:background="#66A5AD"
             android:orientation="horizontal">
 
             <ImageView
@@ -56,6 +57,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:background="#EDF4F2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -104,7 +106,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Towhid"
                         android:inputType="text"
-                        android:text="Towhidul Islam"
+
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="17dp" />
@@ -132,7 +134,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/pen" />
+                     />
 
                 <EditText
                     android:id="@+id/profile_view_email"
@@ -140,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
-                    android:hint="towhidm74@gmail.com"
+
                     android:text="towhidm74@gmail.com"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -164,7 +166,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="30dp"
-                    android:src="@drawable/pen" />
+                     />
 
                 <EditText
                     android:id="@+id/profile_view_mobileno"
@@ -172,8 +174,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginLeft="25dp"
-                    android:hint="towhidm74@gmail.com"
-                    android:text="+8801631913518"
+                    android:hint="+8801*********"
                     android:layout_marginBottom="10dp"
                     android:textColor="@color/black" />
             </LinearLayout>
@@ -295,17 +296,18 @@
                 android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_marginLeft="30dp"
-                android:textColor="@color/grey"
+                android:textColor="@color/black"
                 />
+
             <EditText
-                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:hint="I have three years of experience"
                 android:maxLines="3"
-                android:text="I have three years of experience"
-                />
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
