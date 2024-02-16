@@ -85,7 +85,11 @@
         <activity
             android:name=".profile_view"
             android:exported="false" />
+<activity android:name=".Profile_Contact"
+    android:exported="false"/>
 
+        <activity android:name=".ProfilePrivacy"
+            android:exported="false"/>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

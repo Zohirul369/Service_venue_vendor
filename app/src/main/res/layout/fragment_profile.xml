@@ -167,6 +167,7 @@
             </LinearLayout>
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_below="@id/vendor_profile_details"
@@ -184,6 +185,7 @@
                      />
 
                 <TextView
+                    android:id="@+id/contact_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -212,6 +214,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/privacy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
